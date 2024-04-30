@@ -1,17 +1,18 @@
-import { useEffect } from "react";
+import { FC } from "react";
 
-import { useAppDispatch } from "@/hooks/AppDispatch.ts";
-import { getCartsThunk } from "@/service/slices/carts.slice.ts";
+import { Carts } from "@/components/Carts";
+import { Loader } from "@/components/Loader/Loader.tsx";
+import { ErrorText } from "@/components/ErrorText";
 
-export const App = () => {
-  const dispatch = useAppDispatch();
-  useEffect(() => {
-    dispatch(getCartsThunk());
-  }, [dispatch]);
+import { AppHeader } from "./components/AppHeader";
 
-  return (
-    <div>
-      <p>123</p>
-    </div>
-  );
-};
+export const App: FC = () => (
+  <>
+    <AppHeader />
+    <main>
+      <ErrorText />
+      <Carts />
+    </main>
+    <Loader />
+  </>
+);

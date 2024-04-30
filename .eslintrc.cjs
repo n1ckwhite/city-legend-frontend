@@ -128,6 +128,7 @@ module.exports = {
     'react/button-has-type': 0,
     'jsx-a11y/control-has-associated-label': 0,
     'jsx-a11y/no-autofocus': 0,
+    'object-curly-newline': 0,
     '@typescript-eslint/quotes': 0,
     '@typescript-eslint/no-unused-vars': 0,
     'no-restricted-exports': 0,

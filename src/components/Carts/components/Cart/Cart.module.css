@@ -1,0 +1,34 @@
+.box {
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  min-width: 320px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.txt {
+  text-align: center;
+  max-width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
