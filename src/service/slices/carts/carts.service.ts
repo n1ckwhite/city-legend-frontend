@@ -59,7 +59,7 @@ export const cartsService: ICartsService = {
 
       return response.data;
     } catch {
-      throw new Error("Ошибка при изменении картыs");
+      throw new Error("Ошибка при изменении карты");
     }
   },
 };
